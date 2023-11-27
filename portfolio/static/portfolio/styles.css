@@ -1,0 +1,14 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    perspective: 1000px; /* Set the perspective for the 3D effect */
+}
+
+.container:hover {
+    transform: perspective(1000px) translateZ(50px); /* Adjust the translateZ value to control the depth of the 3D effect */
+    transition: transform 0.5s ease;
+}
